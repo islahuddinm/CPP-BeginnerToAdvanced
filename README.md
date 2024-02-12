@@ -2,12 +2,12 @@
 
 ### Must to be known
 ```bash
-What programming language terminologys and stuff are :
+What programming language terminologys and stuff are
 
 - Library
 - Function
 - Parameter
-- Data type
+- Data Type
 - Variable
 - Value
 - Statement
