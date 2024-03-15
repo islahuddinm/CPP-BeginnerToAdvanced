@@ -14,6 +14,8 @@ int main() {
 
     std::cout << "the value of a is " << a << '\n';
     std::cout << "the value of ref_to a is " << refTo_a << '\n';
+    std::cout << "the value of a is " << &a << '\n';
+    std::cout << "the value of ref_to a is " << &refTo_a << '\n';
     std::cout << '\n';
 
     refTo_a = b;

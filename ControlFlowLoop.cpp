@@ -10,10 +10,11 @@ int main5();
 
 int main() {
 
-    for (int i = 0; i <= 10; i+= 2) { //i < 10 is false (i > 10;), loop will not be executed
-
+    for (int i = 0; i <= 10; i+= 2)  //i < 10 is false (i > 10;), loop will not be executed
         std::cout << "loop1 value of i is : " << i << '\n';
-    }
+    
+    for (int i = 0; i <= 2; ++i)
+        std::cout << "loop11 value of i is : " << i << '\n';
 
     std:: cout << '\n';
 

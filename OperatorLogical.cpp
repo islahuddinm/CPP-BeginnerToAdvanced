@@ -12,6 +12,11 @@ int main() {
 
     bool a = false;
     bool b = false;
+    int x = 0;
+    int y = 5;
+
+    std::cout << " a && b : " << (x && y) << '\n';
+    std::cout << " a && b : " << (x || y) << '\n';
     std::cout << " a && b : " << std::boolalpha << (a && b) << '\n'; //result is flase
     a = false; //reset
     b = true;

@@ -29,12 +29,12 @@ void incrementByPointer(int *ptr) {
 /* so, if we just increment using variable in another function the compiler doesnt know where value will be store and
 then if we increment using pointer in another function the compiler know where value will be store because we given address.
 
-When you pass a variable by value to a function, the compiler creates a copy of that variable within the function's scope.
+When you pass a variable with value to a function, the compiler creates a copy of that variable within the function's scope.
 Any modifications made to the parameter inside the function only affect the copy, not the original variable.
 
 However, when you pass a pointer to a variable (pass by pointer), you're essentially passing the memory address of
-the variable. This allows the function to directly access and modify the value stored at that memory address,
-there by affecting the original variable.
+the variable. This allows the function to directly access and modify the value stored at that memory address there
+by affecting the original variable.
 
 In the case of passing by pointer, the compiler indeed knows the memory address where the value is stored because
 you explicitly provide the address of the variable when calling the function. This allows the function to access and

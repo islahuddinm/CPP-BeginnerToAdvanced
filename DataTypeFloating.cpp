@@ -2,8 +2,12 @@
 #include <iomanip>
 
 //floating is used represent numbers with fraction parts
-//precision is refer to number digits
-//scientific notation is a way of expressing numbers that are too long or too small to be conveniently written in decimal form
+
+/* precision  is indicates how many digits the value can have after the decimal point.
+OR precision can means : float has 7 precision. it mean float can just output precisely 7 digits after
+7 digits the next number will not exact.*/
+
+//scientific notation is a way of expressing numbers that are too long or too small number in a more concise form.
 //infinity is result of any number divided zero
 //NaN (non a number) is result of zero divided zero
 //"f" suffic (3.14655467f) of number is represent of "float" number. so the number will be setting to precision of float (7 precision)
@@ -30,24 +34,12 @@ int main() {
     std::cout << "Size of float : " << sizeof(long double) << '\n';
     std::cout << '\n';
     
-    std::cout << std::setprecision(20) << "Float :" << myFloat << '\n';
+    std::cout << std::setprecision(5) << "Float :" << myFloat << '\n';
     std::cout << std::setprecision(20) << "Float2 :" << myFloat2 << '\n';
     std::cout << std::setprecision(20) << "Float3 :" << myFloat3 << '\n';//its result has 7 precision eventhough the data type is douyble because its suffix is "f" (float number)
     std::cout << std::setprecision(20) << "Double :" << myDouble << '\n';
     std::cout << std::setprecision(20) << "Long Double :" << myLongDouble << '\n';
-    std::cout << '\n';
-
-    //std::fixed; is a manipulator to write floating-point values in fixed-point notation.
-    //This means that the decimal point is fixed at a specific position, and
-    //the number of digits after the decimal point remains constant. example in float2 and float3 output
-    std::cout << std::fixed << "Float :" << myFloat << '\n';
-    std::cout << std::fixed << "Float2 :" << myFloat2 << '\n'; //example std::fixed
-    std::cout << std::fixed << "Float3 :" << myFloat3 << '\n'; //example std::fixed
-    std::cout << std::fixed << "Double :" << myDouble << '\n';
-    std::cout << std::fixed << "Long Double :" << myLongDouble << '\n';
-    std::cout.unsetf(std::ios::fixed); //it is to disable std::fixed
-    std::cout << '\n';
-
+    std::cout << '\n';  
 
     double scientificNotation1 = 3e-7; //3e-7 (0.0000003) scientificNotation1 & 2 basically the value is same
     double scientificNotation2 = 0.0000003; //0.0000003 (3e-7 ) scientificNotation1 & 2 basically the value is same
@@ -66,7 +58,8 @@ int main() {
     double value2 = c / b; ////its result is NaN (non a number)
 
     std::cout << "Result of value1 : " << value1 <<'\n';
-    std::cout << "Result of value2 : " << value2 <<'\n';    
-    
+    std::cout << "Result of value2 : " << value2 <<'\n';
+    std::cout << '\n';
+       
     return 0;
 }

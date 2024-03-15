@@ -1,12 +1,13 @@
 #include <iostream>
-#include "01FunctionDeclars.h"
+//#include "01FunctionDeclars.h"
 
 int main() {
 
-    int result = other(4,5);
+    //int result = other(4,5);
 
-    std::cout << "Result is " << result << '\n';
+    //std::cout << "Result is " << result << '\n';
+    std::cout << "Result"<< '\n';
     
-    other2();
+    //other2();
     return 0;
 }
