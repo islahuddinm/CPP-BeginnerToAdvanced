@@ -8,9 +8,9 @@ graphic card (external GPU), and hard drive (storage) are initialized and checke
 by BIOS/UEFI (new version of BIOS) or firmware.
 
 what does BIOS/UEFI do after initialize and check computer's hardware?
-The BIOS/UEFI locates and loads or runs the boot(Boot is process load OS to RAM) loader,
-which is a small program stored in the boot sector of the hard drive. The boot loader then
-loads the operating system (OS) into memory to enable CPU execute.
+The BIOS/UEFI locates and loads or runs the boot loader, which is a small program stored in
+the boot sector of the hard drive. The boot loader then loads the operating system (OS) into memory
+to enable CPU execute. it is called boot process (Boot is process load OS to RAM).
 
 what does OS do after OS is runned by CPU?
 after OS is runned, 'kernel' is the core part of the OS, it takes over control from BIOS/UEFI.
