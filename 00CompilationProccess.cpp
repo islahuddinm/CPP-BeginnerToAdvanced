@@ -13,7 +13,7 @@ there are tools to do compilation that are:
 how compilation proccess work. before programs we have written to be compiled/encoded as
 .exe file(execution file) or machine codes or binary data they have to pass through some steps.
 // before we go further we have to know about machine codes or binary data.
-// 'machine codes' is a 'binary' data directly understood by the computer's hardware. convertions of intructions such as functions, keywords, operations, manipulations, etc.
+// 'machine codes' is a 'binary data' directly understood by the computer's hardware. convertions of intructions such as functions, keywords, operations, manipulations, etc.
 // 'machine codes and binary data' are represented '0' and '1'.
 
 before programs we have written to be compiled/encoded as .exe file(execution file) or
@@ -49,12 +49,12 @@ Here's an example of adding two numbers and storing the result in a register:
         ADD X0(a + b), X1(a = 5), X2(b = 3);
         ADD(assembly intruction) X0, X1, X2 (assembly register of value);
         Add the value in register X1 to the value in register X2 and store the result in register X0
-        ADD X0 (X2 (5, 3(X1)) );
+        ADD X0 (X2 (3 + 5(X1)) );
 
 after assembler(is part of compiler) convert programs from programming language to be
-assembly/opcode/mnemonic then 'linker' will link/integrate all programs that have converted to be
-assembly to compiled/encoded by compiler be .exe file that contains instructuions and values represented
-by machine codes or binary data.
+assembly/opcode/mnemonic then 'linker' will link/integrate all programs(code file we already written in vs code)
+that have converted to be assembly to compiled/encoded by compiler be .exe file that contains
+instructuions and values represented by machine codes or binary data.
 
 maybe something like this 'ADD X0 (X2 (5, 3(X1)) );'
 be 'bin bin(bin (00000101, 00000011(bin)) );' or .exe file. 'bin'(binary).
